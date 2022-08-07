@@ -1,8 +1,7 @@
 import { ProfileInfo } from "./ProfileInfo/ProfileInfo";
 import { ProfileStats } from "./ProfileStats/ProfileStats";
-import user from './user.json';
 
-export const Profile = () => {
+export const Profile = ({user}) => {
     return <>
         <ProfileInfo
             username={user.username}
