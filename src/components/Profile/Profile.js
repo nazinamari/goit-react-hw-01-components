@@ -1,19 +1,20 @@
 import { ProfileInfo } from "./ProfileInfo/ProfileInfo";
 import { ProfileStats } from "./ProfileStats/ProfileStats";
 
-export const Profile = ({user}) => {
-    return <>
+export const Profile = ({ user: { username, tag, location, avatar, stats }}) => {
+    return (
+        <>
         <ProfileInfo
-            username={user.username}
-            tag={user.tag}
-            location={user.location}
-            avatar={user.avatar}
-            stats={user.stats}
+            username={username}
+            tag={tag}
+            location={location}
+            avatar={avatar}
         />
         <ProfileStats
-            followers={user.stats.followers}
-            views={user.stats.views}
-            likes={user.stats.likes}
+            followers={stats.followers}
+            views={stats.views}
+            likes={stats.likes}
         />
-    </>
+        </>
+    )
 };

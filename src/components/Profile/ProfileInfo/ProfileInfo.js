@@ -1,6 +1,7 @@
 import css from './ProfileInfo.css';
+import PropTypes from 'prop-types';
 
-export const ProfileInfo = ({ username, tag, location, avatar }) => {
+export const ProfileInfo = ({ avatar, username, tag, location,}) => {
     return (
         <div className={css.profile}>
             <div className={css.description}>
@@ -16,3 +17,10 @@ export const ProfileInfo = ({ username, tag, location, avatar }) => {
         </div>
     )
 };
+
+ProfileInfo.propTypes = {
+    avatar: PropTypes.string.isRequired,
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+}
