@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 export const Container = styled.section`
     margin: 50px auto;
@@ -33,13 +33,13 @@ export const Item = styled.li`
 `;
 
 export const Label = styled.span`
-    color: white;
+    color: ${p => p.theme.colors.white};
     font-weight: 500;
     margin-bottom: 10px;
 `;
 
 export const Percentage = styled.span`
-    color: white;
+    color: ${p => p.theme.colors.white};
     font-weight: 500;
     margin-bottom: 10px;
 `; 

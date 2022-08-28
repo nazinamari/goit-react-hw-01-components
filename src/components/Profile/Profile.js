@@ -1,7 +1,7 @@
 import { ProfileInfo } from "./ProfileInfo/ProfileInfo";
 import { ProfileStats } from "./ProfileStats/ProfileStats";
 
-import { Container} from "./Profile.styled";
+import { Container } from "./Profile.styled";
 
 export const Profile = ({ user: { username, tag, location, avatar, stats }}) => {
     return (

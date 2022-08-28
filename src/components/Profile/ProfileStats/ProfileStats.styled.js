@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 export const Stats = styled.ul`
     display: flex;
@@ -6,24 +6,24 @@ export const Stats = styled.ul`
     justify-content: space-around;
     align-content: center;
     background-color: #f3f6f9;
-    border: 1px solid #d6d6d6;
-    border-radius: 0px 0px 12px 12px;
+    border: ${p => p.theme.borders.normal};
+    border-radius: ${p => p.theme.radii.normalBottom};
 `;
 
 export const Item = styled.li`
-    padding: 10px;
+    padding: ${p => p.theme.space[3]+2}px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 `;
 
 export const Label = styled.span`
-    color: #919da9;
-    font-weight: 500;
-    margin-bottom: 10px;
+    color: ${p => p.theme.colors.secondary};
+    font-weight: ${p => p.theme.fontWeights.normal};
+    margin-bottom: ${p => p.theme.space[3]+2}px;
 `;
 
 export const Quantity = styled.span`
-    font-weight: 700;
+    font-weight: ${p => p.theme.fontWeights.boldPlus};
     text-align: center;
 `;

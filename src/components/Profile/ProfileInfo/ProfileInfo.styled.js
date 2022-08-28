@@ -1,40 +1,41 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 export const Description = styled.div`
-    border-radius: 12px 12px 0px 0px;
+    border-radius: ${p => p.theme.radii.normalTop};
     background-color: white;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: space-evenly;
     align-items: center;
-    border: 1px solid #d6d6d6;
+    border: ${p => p.theme.borders.normal};
     border-bottom: none;
 `;
 
 export const Avatar = styled.img`
     background-color: antiquewhite;
     width: 200px;
-    border-radius: 50%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    border-radius: ${p => p.theme.radii.round};
+    margin-top: ${p => p.theme.space[4]+4}px;
+    margin-bottom: ${p => p.theme.space[4]+4}px;
 `;
 
 export const Name = styled.p`
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
+    font-size: ${p => p.theme.fontSizes.l};
+    font-weight: ${p => p.theme.fontWeights.bold};
+    margin-bottom: ${p => p.theme.space[3]+2}px;
     text-align: center;
+    color: ${p => p.theme.colors.black};
 `;
 
 export const Tag = styled.p`
-    color: #919da9;
-    font-weight: 500;
-    margin-bottom: 10px;
+    color: ${p => p.theme.colors.secondary};
+    font-weight: ${p => p.theme.fontWeights.normal};
+    margin-bottom: ${p => p.theme.space[3]+2}px;
 `;
 
 export const Location = styled.p`
-    color: #919da9;
-    font-weight: 500;
-    margin-bottom: 10px;
+    color: ${p => p.theme.colors.secondary};
+    font-weight: ${p => p.theme.fontWeights.normal};
+    margin-bottom: ${p => p.theme.space[3]+2}px;
 `;
