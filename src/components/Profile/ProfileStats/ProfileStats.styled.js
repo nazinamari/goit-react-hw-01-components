@@ -1,9 +1,6 @@
 import styled from '@emotion/styled';
 
 export const Stats = styled.ul`
-    list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     align-items: center;
     justify-content: space-around;

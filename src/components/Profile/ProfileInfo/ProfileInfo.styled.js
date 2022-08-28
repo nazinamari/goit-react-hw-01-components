@@ -21,7 +21,6 @@ export const Avatar = styled.img`
 `;
 
 export const Name = styled.p`
-    margin: 0px;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -29,14 +28,12 @@ export const Name = styled.p`
 `;
 
 export const Tag = styled.p`
-    margin: 0px;
     color: #919da9;
     font-weight: 500;
     margin-bottom: 10px;
 `;
 
 export const Location = styled.p`
-    margin: 0px;
     color: #919da9;
     font-weight: 500;
     margin-bottom: 10px;

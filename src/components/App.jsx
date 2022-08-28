@@ -9,10 +9,12 @@ import friends from '../json/friends.json';
 import transactions from '../json/transactions.json';
 
 import { Container } from './App.styled';
+import { GlobalStyle } from './utils/GlobalStyle';
 
 export const App = () => {
   return (
     <Container>
+      <GlobalStyle />
       <Profile user={user} />
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
