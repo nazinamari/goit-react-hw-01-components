@@ -1,6 +1,8 @@
 import styled from '@emotion/styled';
 
 export const Item = styled.li`
+    padding: 5px;
+    padding-left: 10px;
     display: flex;
 
     height: 60px;

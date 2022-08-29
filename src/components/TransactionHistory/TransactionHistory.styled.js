@@ -2,7 +2,6 @@ import styled from '@emotion/styled';
 
 export const History = styled.table`
     background-color: white;
-    margin: 50px auto;
     width: 400px;
     height: 100%;
     align-items: center;

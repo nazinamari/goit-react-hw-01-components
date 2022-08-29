@@ -12,7 +12,7 @@ export const ProfileInfo = ({ avatar, username, tag, location,}) => {
             alignItems='center'
             backgroundColor='white'
             border='normal'
-            borderRadius="12px"
+            borderRadius='top'
             borderBottom='none'
             >
             <Avatar

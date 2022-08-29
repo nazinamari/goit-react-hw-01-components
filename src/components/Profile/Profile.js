@@ -1,12 +1,14 @@
 import { ProfileInfo } from "./ProfileInfo/ProfileInfo";
 import { ProfileStats } from "./ProfileStats/ProfileStats";
 
-import { Box } from '../Box';
+import { Section } from '../utils/Section';
+import { Container } from './Profile.styled';
 
 export const Profile = ({ user: { username, tag, location, avatar, stats }}) => {
     return (
-        <Box m="auto" width="300px" height="400px">
-            <ProfileInfo
+        <Section>
+            <Container>
+                <ProfileInfo
                 username={username}
                 tag={tag}
                 location={location}
@@ -17,6 +19,7 @@ export const Profile = ({ user: { username, tag, location, avatar, stats }}) => 
                 views={stats.views}
                 likes={stats.likes}
             />
-        </Box>
+            </Container>
+        </Section>
     )
 };

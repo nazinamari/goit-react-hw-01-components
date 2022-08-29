@@ -3,6 +3,7 @@ export const theme = {
         black: 'black',
         white: 'white',
         secondary: '#919da9',
+        backgroundGray: '#f3f6f9',
     },
     
     space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
@@ -39,8 +40,8 @@ export const theme = {
 
     radii: {
         none: '0',
-        normalTop: '12px 12px 0px 0px',
-        normalBottom: '0px 0px 12px 12px',
+        top: '12px 12px 0px 0px',
+        bottom: '0px 0px 12px 12px',
         round: '50%',
     },
     

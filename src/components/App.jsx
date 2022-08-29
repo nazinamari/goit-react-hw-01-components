@@ -13,7 +13,7 @@ import { GlobalStyle } from './utils/GlobalStyle';
 
 export const App = () => {
   return (
-    <Box p="50px">
+    <Box p="50px" m="0 auto">
       <GlobalStyle />
       <Profile user={user} />
       <Statistics title="Upload stats" stats={data} />

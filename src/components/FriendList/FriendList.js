@@ -3,19 +3,22 @@ import PropTypes from 'prop-types';
 
 
 import { List } from './FriendList.styled';
+import { Section } from "components/utils/Section";
 
 export const FriendList = ({ friends }) => {
   return (
-    <List>
-      {friends.map(({ id, isOnline, avatar, name }) => (
-        <FriendListItem
-          key={id}
-          isOnline={isOnline}
-          avatar={avatar}
-          name={name}
-        />
-      ))}
-    </List>
+    <Section>
+        <List>
+          {friends.map(({ id, isOnline, avatar, name }) => (
+            <FriendListItem
+              key={id}
+              isOnline={isOnline}
+              avatar={avatar}
+              name={name}
+            />
+          ))}
+        </List>
+    </Section>
   );
 };
 

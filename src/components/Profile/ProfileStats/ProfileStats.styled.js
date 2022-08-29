@@ -7,7 +7,7 @@ export const Stats = styled.ul`
     align-content: center;
     background-color: #f3f6f9;
     border: ${p => p.theme.borders.normal};
-    border-radius: ${p => p.theme.radii.normalBottom};
+    border-radius: ${p => p.theme.radii.bottom};
 `;
 
 export const Item = styled.li`
