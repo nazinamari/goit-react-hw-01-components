@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 
 export const Description = styled.div`
-    border-radius: ${p => p.theme.radii.normalTop};
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: space-evenly;
-    align-items: center;
-    border: ${p => p.theme.borders.normal};
-    border-bottom: none;
+    /* border-radius: ${p => p.theme.radii.normalTop}; */
+    /* background-color: white; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-content: center; */
+    /* justify-content: space-evenly;
+    align-items: center; */
+    /* border: ${p => p.theme.borders.normal};
+    border-bottom: none; */
 `;
 
 export const Avatar = styled.img`

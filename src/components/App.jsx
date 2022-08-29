@@ -8,17 +8,17 @@ import data from '../json/data.json';
 import friends from '../json/friends.json';
 import transactions from '../json/transactions.json';
 
-import { Container } from './App.styled';
+import { Box } from './Box';
 import { GlobalStyle } from './utils/GlobalStyle';
 
 export const App = () => {
   return (
-    <Container>
+    <Box p="50px">
       <GlobalStyle />
       <Profile user={user} />
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions}/>
-    </Container>
+    </Box>
   );
 };

@@ -1,16 +1,27 @@
 import PropTypes from 'prop-types';
-import { Description, Avatar, Name, Tag, Location } from './ProfileInfo.styled';
+import { Avatar, Name, Tag, Location } from './ProfileInfo.styled';
+import { Box } from '../../Box';
 
 export const ProfileInfo = ({ avatar, username, tag, location,}) => {
     return (
-        <Description>
+        <Box
+            display='flex'
+            flexDirection='column'
+            alignContent='center'
+            justifyContent='space-evenly'
+            alignItems='center'
+            backgroundColor='white'
+            border='normal'
+            borderRadius="12px"
+            borderBottom='none'
+            >
             <Avatar
                 src={avatar}
                 alt="User avatar"/> 
             <Name>{username}</Name>
             <Tag>{tag}</Tag>
             <Location>{location}</Location>
-        </Description>
+        </Box>
     )
 };
 
