@@ -1,14 +1,12 @@
 import { FriendListItem } from "./FriendItem/FriendItem";
 import PropTypes from 'prop-types';
 
-
-import { List } from './FriendList.styled';
-import { Section } from "components/utils/Section";
+import { Box } from '../Box';
 
 export const FriendList = ({ friends }) => {
   return (
-    <Section>
-        <List>
+    <Box as="section" m="0 auto" mb="50px">
+        <Box as="ul" width="220px" m="0 auto">
           {friends.map(({ id, isOnline, avatar, name }) => (
             <FriendListItem
               key={id}
@@ -17,8 +15,8 @@ export const FriendList = ({ friends }) => {
               name={name}
             />
           ))}
-        </List>
-    </Section>
+        </Box>
+    </Box>
   );
 };
 

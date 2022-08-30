@@ -1,28 +1,26 @@
 import getRandomHexColor from '../utils/RandomColors';
 import PropTypes from 'prop-types';
 
-import { Container, Title, List, Item, Label, Percentage } from './Statistics.styled';
-import { Section } from "components/utils/Section";
+import { Title, List, Item, Label, Percentage } from './Statistics.styled';
+import { Box } from '../Box';
 
 export const Statistics = ({ title, stats }) => {
   return (
-    <Section>
-      <Container>
-        {title && <Title>{title.toUpperCase()}</Title>}
+    <Box as="section" width="300px" m="0 auto" mb="50px" border="1px solid #d6d6d6" >
+      {title && <Title>{title.toUpperCase()}</Title>}
 
-        <List>
-          {stats.map(({ id, label, percentage }) => (
-            <Item
-              key={id}
-              style={{ backgroundColor: getRandomHexColor() }}
-            >
-              <Label>{label}</Label>
-              <Percentage>{percentage + '%'}</Percentage>
-            </Item>
-          ))}
-        </List>
-      </Container>
-    </Section>
+      <List>
+        {stats.map(({ id, label, percentage }) => (
+          <Item
+            key={id}
+            style={{ backgroundColor: getRandomHexColor() }}
+          >
+            <Label>{label}</Label>
+            <Percentage>{percentage + '%'}</Percentage>
+          </Item>
+        ))}
+      </List>
+    </Box>
   );
 };
 

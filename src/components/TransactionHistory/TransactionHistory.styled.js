@@ -6,6 +6,7 @@ export const History = styled.table`
     height: 100%;
     align-items: center;
     box-shadow: 1px 1px 4px 2px rgb(0, 0, 0, 0.25);
+    margin: 0 auto;
 `;
 
 export const Header = styled.thead`

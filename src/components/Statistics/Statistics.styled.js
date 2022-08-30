@@ -1,12 +1,5 @@
 import styled from 'styled-components';
 
-export const Container = styled.section`
-    margin: 0px auto;
-    width: 300px;
-    height: 100%;
-    border: 1px solid #d6d6d6;
-`;
-
 export const Title = styled.h2`
     color: rgb(117, 111, 111);
     background-color: white;

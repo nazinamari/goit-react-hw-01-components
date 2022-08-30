@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
-import { Section } from '../utils/Section';
 import { History, Header, Tr, Th, Td } from './TransactionHistory.styled';
+import { Box } from '../Box';
 
 export const TransactionHistory = ({ items }) => {
   return (
-    <Section>
+    <Box as="section" m="0 auto" mb="50px">
       <History>
         <Header>
           <Tr>
@@ -24,7 +24,7 @@ export const TransactionHistory = ({ items }) => {
           ))}
         </tbody>
       </History>
-    </Section>
+    </Box>
   );
 };
 
